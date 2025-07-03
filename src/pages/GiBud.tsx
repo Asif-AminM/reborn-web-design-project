@@ -22,7 +22,7 @@ const GiBud = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Bid Form */}
           <div className="lg:col-span-2">

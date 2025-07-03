@@ -44,7 +44,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <div className="relative h-[600px] overflow-hidden">
+      <div className="relative h-[500px] md:h-[600px] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -52,32 +52,32 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
             {/* Left Content */}
-            <div className="text-white">
+            <div className="text-white text-center lg:text-left">
               <p className="text-sm uppercase tracking-wider mb-2">BILAUKSJON</p>
-              <h1 className="text-5xl font-bold mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                 <span className="text-orange">ONGSDAG OG</span><br />
                 <span className="text-orange">SONDAG</span>
               </h1>
-              <p className="text-xl mb-2">HVER UKE</p>
-              <p className="text-sm mb-8">Onsdag kl. 18:00-20:00 og Søndag kl. 15:00-17:00</p>
+              <p className="text-lg md:text-xl mb-2">HVER UKE</p>
+              <p className="text-sm mb-6 lg:mb-8">Onsdag kl. 18:00-20:00 og Søndag kl. 15:00-17:00</p>
               
-              <div className="mb-8">
+              <div className="mb-6 lg:mb-8">
                 <h3 className="text-lg font-semibold mb-2">Kontakt oss</h3>
                 <p className="text-sm">Tom Østerby</p>
                 <p className="text-sm">22 22 56 56</p>
                 <p className="text-sm text-orange">tom@okernbilauksjon.no</p>
               </div>
               
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="orange">Gi bud nå</Button>
                 <Button variant="secondary">Selg bilen din</Button>
               </div>
             </div>
 
             {/* Right Content - Opening Hours */}
-            <div className="lg:self-start lg:mt-12">
+            <div className="lg:self-start lg:mt-12 order-first lg:order-last">
               <Card className="bg-card/90 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-4">Åpningstider</h3>

@@ -45,9 +45,9 @@ const Biler = () => {
       <Header />
       
       <div className="container mx-auto px-4 py-8">
-        <div className="flex gap-8">
+        <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar Filters */}
-          <div className="w-80">
+          <div className="w-full lg:w-80">
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Filters:</CardTitle>
@@ -81,7 +81,7 @@ const Biler = () => {
 
           {/* Main Content */}
           <div className="flex-1">
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
               <div className="flex items-center gap-2">
                 <Button variant="orange" size="icon">
                   <Grid3X3 className="h-4 w-4" />
@@ -92,7 +92,7 @@ const Biler = () => {
               </div>
               
               <Select>
-                <SelectTrigger className="w-48">
+                <SelectTrigger className="w-full sm:w-48">
                   <SelectValue placeholder="Select an option" />
                 </SelectTrigger>
                 <SelectContent>
@@ -104,7 +104,7 @@ const Biler = () => {
               </Select>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {cars.map((car, index) => (
                 <CarCard key={index} {...car} />
               ))}

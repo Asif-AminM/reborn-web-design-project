@@ -21,14 +21,14 @@ const SelgBil = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Process Steps */}
           <div className="lg:col-span-2">
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-6">Hvordan fungerer det å selge bil hos Økern Bilauksjon?</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FileText className="w-8 h-8 text-orange" />
